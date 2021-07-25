@@ -14,8 +14,10 @@
         <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="styles.css" rel="stylesheet" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     </head>
     <body id="page-top">
+        <!-- class="bg-image" style="background-image: url(images/fgrainbow.png); height: 100%; background-repeat:no-repeat; background-position: top; background-size: cover"; -->
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
@@ -34,31 +36,65 @@
             </div>
         </nav>
         <!-- Page Content-->
-        <div class="container-fluid p-0">
-            <!-- About-->
-            <section class="resume-section" id="about">
-                <div class="resume-section-content">
-                    <h1 class="mb-0">
-                        Fairygirl
+        <div class="container-fluid p-0 redxd">
+            <section>
+                <div>
+                    <h1 class="mb-0 d-flex justify-content-center header-padding">
+                        Fairygirl Soundboard
                     </h1>
-                    <span class="d-md-block d-lg-none">
-                         <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="images/fairygirl.png" alt="Fairygirl profile picture." />
-                    </span>
-                    <div>
-                        <audio id="cuwute" src="sounds/cuwute.mp3"></audio>
-                        <button type="button" class="btn btn-primary" onclick="document.getElementById('cuwute').play()">cuwute</button>
-                        <audio id="cuwute" src="sounds/cuwute.mp3"></audio>
-                        <button type="button" class="btn btn-primary" onclick="document.getElementById('cuwute').play()">cuwute</button>
-                        <audio id="cuwute" src="sounds/cuwute.mp3"></audio>
-                        <button type="button" class="btn btn-primary" onclick="document.getElementById('cuwute').play()">cuwute</button>
+                    <div class="full-page">
+                        <span class="d-lg-none center">
+                            <img class="img-icon center rounded-circle mx-auto mb-2" src="images/fairygirl.png" alt="Fairygirl profile picture." />
+                       </span>
                     </div>
+
                     
+                    <div class="fg-content bg-image" style="background-image: url(images/fgrainbow.png); height: 100vh; background-repeat:no-repeat; background-position: top; background-size: cover;">
+                        <div class="fg-sounds">
+                            <button data-audio="sounds/cringe.mp3">cringe</button>
+                            <button data-audio="sounds/cuwute.mp3" class="sound">cuwute</button>
+                            <button data-audio="sounds/giggle.mp3" class="sound">giggle</button>
+                            <button data-audio="sounds/hehe.mp3" class="sound">hehe</button>
+                        </div>
+                    </div>
+
+                    
+
+
+                    
+                    <!-- <div>
+                        <p>Bacon ipsum dolor amet short loin kevin alcatra spare ribs, pork loin boudin leberkas flank picanha capicola sirloin brisket. Kielbasa burgdoggen capicola short ribs, hamburger meatloaf salami ham hock tail ribeye ground round boudin. Pastrami frankfurter chislic flank strip steak. Meatball tail prosciutto tri-tip brisket, frankfurter corned beef flank. Sausage buffalo alcatra, brisket meatloaf fatback chuck chicken kielbasa beef ribs. Picanha pastrami pig, jowl cow turkey pork loin bacon ham pork chop kevin filet mignon spare ribs pancetta tongue.
+                        </p>
+                        <p>Bacon ipsum dolor amet short loin kevin alcatra spare ribs, pork loin boudin leberkas flank picanha capicola sirloin brisket. Kielbasa burgdoggen capicola short ribs, hamburger meatloaf salami ham hock tail ribeye ground round boudin. Pastrami frankfurter chislic flank strip steak. Meatball tail prosciutto tri-tip brisket, frankfurter corned beef flank. Sausage buffalo alcatra, brisket meatloaf fatback chuck chicken kielbasa beef ribs. Picanha pastrami pig, jowl cow turkey pork loin bacon ham pork chop kevin filet mignon spare ribs pancetta tongue.
+                        </p>
+                        <p>Bacon ipsum dolor amet short loin kevin alcatra spare ribs, pork loin boudin leberkas flank picanha capicola sirloin brisket. Kielbasa burgdoggen capicola short ribs, hamburger meatloaf salami ham hock tail ribeye ground round boudin. Pastrami frankfurter chislic flank strip steak. Meatball tail prosciutto tri-tip brisket, frankfurter corned beef flank. Sausage buffalo alcatra, brisket meatloaf fatback chuck chicken kielbasa beef ribs. Picanha pastrami pig, jowl cow turkey pork loin bacon ham pork chop kevin filet mignon spare ribs pancetta tongue.
+                        </p>
+
+                        <p>Bacon ipsum dolor amet short loin kevin alcatra spare ribs, pork loin boudin leberkas flank picanha capicola sirloin brisket. Kielbasa burgdoggen capicola short ribs, hamburger meatloaf salami ham hock tail ribeye ground round boudin. Pastrami frankfurter chislic flank strip steak. Meatball tail prosciutto tri-tip brisket, frankfurter corned beef flank. Sausage buffalo alcatra, brisket meatloaf fatback chuck chicken kielbasa beef ribs. Picanha pastrami pig, jowl cow turkey pork loin bacon ham pork chop kevin filet mignon spare ribs pancetta tongue.
+                        </p>
+                        <p>Bacon ipsum dolor amet short loin kevin alcatra spare ribs, pork loin boudin leberkas flank picanha capicola sirloin brisket. Kielbasa burgdoggen capicola short ribs, hamburger meatloaf salami ham hock tail ribeye ground round boudin. Pastrami frankfurter chislic flank strip steak. Meatball tail prosciutto tri-tip brisket, frankfurter corned beef flank. Sausage buffalo alcatra, brisket meatloaf fatback chuck chicken kielbasa beef ribs. Picanha pastrami pig, jowl cow turkey pork loin bacon ham pork chop kevin filet mignon spare ribs pancetta tongue.
+                        </p>
+                        <p>Bacon ipsum dolor amet short loin kevin alcatra spare ribs, pork loin boudin leberkas flank picanha capicola sirloin brisket. Kielbasa burgdoggen capicola short ribs, hamburger meatloaf salami ham hock tail ribeye ground round boudin. Pastrami frankfurter chislic flank strip steak. Meatball tail prosciutto tri-tip brisket, frankfurter corned beef flank. Sausage buffalo alcatra, brisket meatloaf fatback chuck chicken kielbasa beef ribs. Picanha pastrami pig, jowl cow turkey pork loin bacon ham pork chop kevin filet mignon spare ribs pancetta tongue.
+                        </p>
+                        <p>Bacon ipsum dolor amet short loin kevin alcatra spare ribs, pork loin boudin leberkas flank picanha capicola sirloin brisket. Kielbasa burgdoggen capicola short ribs, hamburger meatloaf salami ham hock tail ribeye ground round boudin. Pastrami frankfurter chislic flank strip steak. Meatball tail prosciutto tri-tip brisket, frankfurter corned beef flank. Sausage buffalo alcatra, brisket meatloaf fatback chuck chicken kielbasa beef ribs. Picanha pastrami pig, jowl cow turkey pork loin bacon ham pork chop kevin filet mignon spare ribs pancetta tongue.
+                        </p>
+                        <p>Bacon ipsum dolor amet short loin kevin alcatra spare ribs, pork loin boudin leberkas flank picanha capicola sirloin brisket. Kielbasa burgdoggen capicola short ribs, hamburger meatloaf salami ham hock tail ribeye ground round boudin. Pastrami frankfurter chislic flank strip steak. Meatball tail prosciutto tri-tip brisket, frankfurter corned beef flank. Sausage buffalo alcatra, brisket meatloaf fatback chuck chicken kielbasa beef ribs. Picanha pastrami pig, jowl cow turkey pork loin bacon ham pork chop kevin filet mignon spare ribs pancetta tongue.
+                        </p>
+                    </div> -->
                 </div>
             </section>
         </div>
+        
+        <footer class="footer">
+            <div class="audio-player">
+                <audio id="playa" controls>
+                    <source src="">
+                </audio> 
+            </div>
+        </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        <script src="scripts.js"></script>
     </body>
 </html>

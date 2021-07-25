@@ -32,3 +32,13 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+$(function() {
+    $('.sound').on('click', function() {
+        var soundPath = $(this).data('audio');
+        document.getElementById('playa').pause();
+        $('#playa').attr('src', soundPath);
+        console.log(soundPath);
+        document.getElementById('playa').play();
+    });    
+  });

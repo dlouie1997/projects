@@ -43,6 +43,9 @@
   box-sizing: border-box;
 }
 
+.header-padding {
+  padding-top: 30px;
+}
 @media (prefers-reduced-motion: no-preference) {
   :root {
     scroll-behavior: smooth;
@@ -571,6 +574,17 @@ progress {
 .img-fluid {
   max-width: 100%;
   height: auto;
+}
+.img-icon {
+  width: 200px;
+  height: auto;
+}
+.full-page {
+  display: flex;
+}
+.center {
+  margin: 0 auto;
+  text-align: center;
 }
 
 .img-thumbnail {
@@ -10996,4 +11010,60 @@ section.resume-section .resume-section-content {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
+}
+.redxd {
+  background-color: red;
+}
+
+.rainbow-pic {
+  height: 900px;
+  width: auto;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 900px;
+  margin: 0 auto;
+  height: 54px;
+  line-height: 60px;
+}
+#playa {
+  width: 81%;
+  
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #91434f;
+}
+audio::-webkit-media-controls-mute-button {
+  color: #fff;
+}
+
+audio::-webkit-media-controls-play-button {
+  color: #fff;
+}
+
+audio::-webkit-media-controls-timeline-container {
+  color: #fff;
+}
+
+audio::-webkit-media-controls-current-time-display {
+  color: #fff;
+}
+
+audio::-webkit-media-controls-time-remaining-display {
+  color: #fff;
+}
+
+audio::-webkit-media-controls-timeline {
+  color: #fff;
+}
+
+audio::-webkit-media-controls-volume-slider-container {
+  background-color: #91434f;
+}
+
+audio::-webkit-media-controls-volume-slider {
+  background-color: #91434f;
 }
