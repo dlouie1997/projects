@@ -86,11 +86,11 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 }
 
 h1, .h1 {
-  font-size: calc(1.725rem + 5.7vw);
+  font-size: 4em;
 }
 @media (min-width: 1200px) {
   h1, .h1 {
-    font-size: 6rem;
+    font-size: 4em;
   }
 }
 
@@ -2981,6 +2981,7 @@ textarea.form-control-lg {
   color: #000;
   background-color: #FB9EAC;
   border-color: #FB9EAC;
+  margin: 6px;
 }
 .btn-primary:hover {
   color: #000;
@@ -2990,8 +2991,8 @@ textarea.form-control-lg {
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #000;
   background-color: #d17d8a;
-  border-color: #d17d8a;
-  box-shadow: 0 0 0 0.25rem rgba(206, 59, 132, 0.25);
+  border-color: #000;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 1);
 }
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
   color: #000;
@@ -11015,6 +11016,12 @@ section.resume-section .resume-section-content {
   background-color: red;
 }
 
+/*david kinda brazy*/
+
+.fg-sounds button {
+
+}
+
 .rainbow-pic {
   height: 900px;
   width: auto;
@@ -11023,18 +11030,21 @@ section.resume-section .resume-section-content {
 .footer {
   position: fixed;
   bottom: 0;
-  width: 900px;
   margin: 0 auto;
   height: 54px;
   line-height: 60px;
 }
+.audio-player {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 #playa {
-  width: 81%;
-  
+  margin: 0 auto;
 }
 
 audio::-webkit-media-controls-panel {
-  background-color: #91434f;
+  background-color: #FB9EAC;
 }
 audio::-webkit-media-controls-mute-button {
   color: #fff;
@@ -11049,11 +11059,11 @@ audio::-webkit-media-controls-timeline-container {
 }
 
 audio::-webkit-media-controls-current-time-display {
-  color: #fff;
+  color: #000;
 }
 
 audio::-webkit-media-controls-time-remaining-display {
-  color: #fff;
+  color: #000;
 }
 
 audio::-webkit-media-controls-timeline {
@@ -11061,9 +11071,58 @@ audio::-webkit-media-controls-timeline {
 }
 
 audio::-webkit-media-controls-volume-slider-container {
-  background-color: #91434f;
+  background-color: #FB9EAC;
 }
 
 audio::-webkit-media-controls-volume-slider {
-  background-color: #91434f;
+  background-color: #FB9EAC;
+}
+
+.wrapper {
+  margin: 0 auto;
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .wrapper {
+    max-width: 500px;
+  }
+  #playa {
+    width: 500px;
+  }
+  .footer {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .wrapper {
+    max-width: 650px;
+  }
+  #playa {
+    width: 650px;
+  }
+}
+@media (min-width: 992px) {
+  .wrapper {
+    max-width: 600px; 
+  }
+  #playa {
+    max-width: 600px;
+  }
+}
+@media (min-width: 1200px) {
+  .wrapper {
+    max-width: 1100px;
+  }
+  #playa {
+    width: 1100px;
+  }
+}
+@media (min-width: 1400px) {
+  .wrapper {
+    max-width: 1200px;
+  }
+  #playa {
+    width: 1200px;
+  }
 }
