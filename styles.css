@@ -11018,6 +11018,13 @@ section.resume-section .resume-section-content {
 .fg-sounds button {
 }
 
+section{
+  background-image: url(images/fgrainbow1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+}
+
 body {
   background: rgb(245,229,234);
 
@@ -11116,6 +11123,10 @@ audio::-webkit-media-controls-volume-slider {
 @media (min-width: 992px) {
   .wrapper {
     max-width: 600px; 
+  }
+  section{
+    height: 100vh;
+    background-position: right;
   }
   #playa {
     max-width: 600px;
