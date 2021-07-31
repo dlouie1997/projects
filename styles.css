@@ -10979,7 +10979,7 @@ p.lead {
   margin-right: 0;
 }
 .social-icons .social-icon:hover {
-  background-color: #FB9EAC;
+  background-color: #d1586b;
 }
 
 .dev-icons {
@@ -11012,19 +11012,15 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
-.redxd {
-  background-color: red;
-}
 
 /*david kinda brazy*/
 
 .fg-sounds button {
-
 }
 
-.rainbow-pic {
-  height: 900px;
-  width: auto;
+body {
+  background: rgb(245,229,234);
+
 }
 
 .footer {
@@ -11078,9 +11074,24 @@ audio::-webkit-media-controls-volume-slider {
   background-color: #FB9EAC;
 }
 
+.b-padding {
+  margin-bottom: 20px;
+}
+
 .wrapper {
   margin: 0 auto;
   text-align: center;
+}
+@media (max-width: 576px) {
+  .wrapper {
+    max-width: 500px;
+  }
+  #playa {
+    width: 500px;
+  }
+  .footer {
+    width: 100%;
+  }
 }
 
 @media (min-width: 576px) {
@@ -11109,6 +11120,9 @@ audio::-webkit-media-controls-volume-slider {
   #playa {
     max-width: 600px;
   }
+  footer {
+    width: calc(100% - 17rem) !important; 
+  }  
 }
 @media (min-width: 1200px) {
   .wrapper {
@@ -11117,6 +11131,9 @@ audio::-webkit-media-controls-volume-slider {
   #playa {
     width: 1100px;
   }
+  footer {
+    width: calc(100% - 17rem) !important; 
+  } 
 }
 @media (min-width: 1400px) {
   .wrapper {
