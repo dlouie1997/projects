@@ -116,7 +116,7 @@ var images = {
 
 
   function changeSound() {
-    var track = document.getElementById('sfx-playa' + i).classList.add('show-hide');
+    document.getElementById('sfx-playa' + i).classList.add('show-hide');
     if (i < lolsounds.length-1) {
       i++;
       console.log(i);
