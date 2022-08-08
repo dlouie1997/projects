@@ -110,6 +110,7 @@ var images = {
     var track = document.getElementById('track');
     if (i < lolsounds.length-1) {
       i++;
+      document.getElementById('sfx-playa').load();
     } else {
       i = 0;
     }
