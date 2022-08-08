@@ -11174,6 +11174,9 @@ audio::-webkit-media-controls-volume-slider {
   .mobile-only {
     display: none;
   }
+  .show-hide {
+    display: none;
+  }
   @media (max-width: 37.5em) {
     .grid h1 {
       font-size: 25px !important;
@@ -11224,7 +11227,7 @@ audio::-webkit-media-controls-volume-slider {
     height: 100vh;
     display: grid;
   }
-  #sfx-playa {
+  audio {
     width: 300px;
     justify-self: center;
     margin: 20px 0;

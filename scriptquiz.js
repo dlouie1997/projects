@@ -73,8 +73,8 @@ var images = {
   var i = 0;
   
   /*audio list*/
-  lolsounds[0] = 'https://static.wikia.nocookie.net/leagueoflegends/images/4/43/Urgot_Ban.ogg/revision/latest?cb=20200810160707';
-  lolsounds[1] = 'https://static.wikia.nocookie.net/leagueoflegends/images/c/c3/Zed_Ban.ogg/revision/latest?cb=20200321161855';
+  lolsounds[0] = 'lolsound/Urgot_ban.ogg';
+  lolsounds[1] = 'lolsound/Zed_ban.ogg';
   lolsounds[2] = 'lolsound/ChoGath_ban.ogg';
   lolsounds[3] = 'lolsound/Diana_ban.ogg';
   lolsounds[4] = 'lolsound/Ezreal_ban.ogg';
@@ -116,16 +116,14 @@ var images = {
 
 
   function changeSound() {
-    var track = document.getElementById('track');
+    var track = document.getElementById('sfx-playa' + i).classList.add('show-hide');
     if (i < lolsounds.length-1) {
       i++;
       console.log(i);
     } else {
       i = 0;
     }
-    track.src = lolsounds[i];
-    console.log(track.src);
-    document.getElementById('sfx-playa').load();
+    document.getElementById('sfx-playa' + i).classList.remove('show-hide');
   }
   
 
