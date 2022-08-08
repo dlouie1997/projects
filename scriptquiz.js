@@ -73,8 +73,8 @@ var images = {
   var i = 0;
   
   /*audio list*/
-  lolsounds[0] = 'lolsound/Urgot_ban.ogg';
-  lolsounds[1] = 'lolsound/Zed_ban.ogg';
+  lolsounds[0] = '/lolsound/Urgot_ban.ogg';
+  lolsounds[1] = '/lolsound/Zed_ban.ogg';
   lolsounds[2] = 'lolsound/ChoGath_ban.ogg';
   lolsounds[3] = 'lolsound/Diana_ban.ogg';
   lolsounds[4] = 'lolsound/Ezreal_ban.ogg';
@@ -119,10 +119,12 @@ var images = {
     var track = document.getElementById('track');
     if (i < lolsounds.length-1) {
       i++;
+      console.log(i);
     } else {
       i = 0;
     }
     track.src = lolsounds[i];
+    console.log(track.src);
     document.getElementById('sfx-playa').load();
   }
   
