@@ -73,7 +73,7 @@ var images = {
   var i = 0;
   
   /*audio list*/
-  lolsounds[0] = 'lolsound/Urgot_ban.ogg';
+  lolsounds[0] = 'https://static.wikia.nocookie.net/leagueoflegends/images/4/43/Urgot_Ban.ogg/revision/latest?cb=20200810160707';
   lolsounds[1] = 'https://static.wikia.nocookie.net/leagueoflegends/images/c/c3/Zed_Ban.ogg/revision/latest?cb=20200321161855';
   lolsounds[2] = 'lolsound/ChoGath_ban.ogg';
   lolsounds[3] = 'lolsound/Diana_ban.ogg';
