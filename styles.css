@@ -11171,10 +11171,15 @@ audio::-webkit-media-controls-volume-slider {
 
 
 /*quiz*/
-
+  .mobile-only {
+    display: none;
+  }
   @media (max-width: 37.5em) {
     .grid h1 {
       font-size: 25px !important;
+    }
+    .mobile-only {
+      display: block !important;
     }
     .grid {
       width: 90vw !important;
