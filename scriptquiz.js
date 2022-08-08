@@ -58,6 +58,15 @@ var images = {
   document.getElementById('btn0').addEventListener('click', () => {
     document.querySelectorAll('audio').forEach(el => el.pause());
   });
+  document.getElementById('btn1').addEventListener('click', () => {
+    document.querySelectorAll('audio').forEach(el => el.pause());
+  });
+  document.getElementById('btn2').addEventListener('click', () => {
+    document.querySelectorAll('audio').forEach(el => el.pause());
+  });
+  document.getElementById('btn3').addEventListener('click', () => {
+    document.querySelectorAll('audio').forEach(el => el.pause());
+  });
 
 
   var lolsounds = new Array();
@@ -110,7 +119,6 @@ var images = {
     var track = document.getElementById('track');
     if (i < lolsounds.length-1) {
       i++;
-      document.getElementById('sfx-playa').load();
     } else {
       i = 0;
     }
