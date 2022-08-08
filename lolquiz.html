@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="David" />
+        <title>Lol Sound Quiz</title>
+        <!-- <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" /> -->
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark yellow-bg fixed-top" id="sideNav">
+            <span class="navbar-brand js-scroll-trigger">
+                <span class="d-block d-lg-none">LoL Voice Lines Quiz</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2 nav-item" src="lolportraits/yuh.jpg" alt="Man standing in front of the Golden Gate Bridge" /></span>
+            </span>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link-quiz js-scroll-trigger" href="lolquiz.html">Quiz</a></li>
+                    <li class="nav-item"><a class="nav-link-quiz js-scroll-trigger" href="answerkey.html">Answer Key</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <br>
+        <div class="grid">
+            <div id="quiz">
+                <h1>League of Legends voice lines quiz</h1>
+                <hr>
+                <p id="question"></p>
+                <audio id="sfx-playa" controls>
+                    <source src="lolsound/Urgot_Ban.ogg" id="track">
+                </audio>
+
+                <!-- <div class="audio-player justify-content-center">
+                    <audio id="playa" controls>
+                        <source id="audioSource" src="">
+                    </audio> 
+                </div> -->
+
+                <!--<div class="sound-player">
+                    <button id="sfx-playa">Play</button>
+                    <button id="sfx-playa-stopper">Stop</button> 
+                </div>-->
+                <div class="buttons">
+                    <button id="btn0"><span id="choice0"></span></button>
+                    <button id="btn1"><span id="choice1"></span></button>
+                    <button id="btn2"><span id="choice2"></span></button>
+                    <button id="btn3"><span id="choice3"></span></button>
+                </div>
+                <hr style="margin-top: 30px">
+                <footer>
+                    <p id="progress">Question x of y</p>
+                </footer>
+            </div>
+        </div>
+        <br>
+        <!-- <div class="container-fluid p-0">
+           <div class="questions">
+               <h1>Whose voice line is this?</h1>
+               <audio controls>
+                <source src="lolsound\Aatrox_Select_new.ogg" type="audio/ogg">
+              </audio>
+              <label>
+                <img src="lolportraits\AatroxSquare.webp" alt="">
+              </label>
+              
+              <img src="lolportraits\AhriSquare.webp" alt="">
+              <img src="lolportraits\AkaliSquare.webp" alt="">
+              <img src="lolportraits\AkshanSquare.webp" alt="">
+           </div>
+        </div> -->
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="scriptquiz.js"></script>
+    </body>
+</html>

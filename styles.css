@@ -69,7 +69,6 @@ hr {
   color: inherit;
   background-color: currentColor;
   border: 0;
-  opacity: 0.25;
 }
 
 hr:not([size]) {
@@ -4259,6 +4258,7 @@ textarea.form-control-lg {
 .navbar-dark .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.55);
 }
+
 .navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:focus {
   color: rgba(255, 255, 255, 0.75);
 }
@@ -4269,6 +4269,20 @@ textarea.form-control-lg {
 .navbar-dark .navbar-nav .nav-link.active {
   color: #fff;
 }
+
+.navbar-dark .navbar-nav .nav-link-quiz {
+  color: #000;
+  text-decoration: none;
+}
+#sideNav .navbar-nav .nav-item .nav-link-quiz {
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+.navbar-dark .navbar-nav .nav-link-quiz:hover, .navbar-dark .navbar-nav .nav-link-quiz:focus {
+  color: rgba(255, 255, 255, 0.75);
+}
+
 .navbar-dark .navbar-toggler {
   color: rgba(255, 255, 255, 0.55);
   border-color: rgba(255, 255, 255, 0.1);
@@ -11154,3 +11168,174 @@ audio::-webkit-media-controls-volume-slider {
     width: 1200px;
   }
 }
+
+
+/*quiz*/
+
+  @media (max-width: 37.5em) {
+    .grid h1 {
+      font-size: 25px !important;
+    }
+    .grid {
+      width: 90vw !important;
+      height: 100vh;
+      padding: 0 !important;
+      margin: 60px auto 30px auto !important;
+    }
+    #quiz {
+      padding: 5%;
+    }
+    .buttons {
+      margin-top: 10px;
+      display: grid;
+      grid-template-areas: 
+        "main main" 
+        "main main" !important;
+      gap: 20px !important;
+    }
+    #sfx-playa {
+      margin: 10px 0 !important;
+    }
+    .quiz-answers {
+      display: block !important;
+    }
+    .ans-header {
+      padding-top: 20px !important;
+    }
+  }
+  
+  @font-face {
+    font-family: lolfont;
+    src: url(lolfont/Friz\ Quadrata\ Regular.ttf);
+  }
+  .yellow-bg {
+    background-color: #FB9EAC;
+  }
+  .title-heading {
+    text-align: center !important;
+  }
+  body {
+    background-color: #eeeeee;
+    height: 100vh;
+    display: grid;
+  }
+  #sfx-playa {
+    width: 300px;
+    justify-self: center;
+    margin: 20px 0;
+    font-family: "lolfont", sans-serif;
+  }
+  #sfx-playa-stopper {
+    width: 200px;
+    grid-area: header;
+    justify-self: right;
+    margin-bottom: 20px;
+    font-family: "lolfont", sans-serif;
+    
+  }
+  .grid {
+    width: 60vw;
+    height: auto;
+    margin: 0 auto;
+    align-self: center;
+    background-color: #fff;
+    padding: 10px 50px 50px 50px;
+    border-radius: 50px;
+    border: 2px solid #cbcbcb;
+    box-shadow: 10px 15px 5px #cbcbcb;
+  }
+  #quiz {
+    align-self: center;
+    display: grid;
+    margin-top: 5px;
+  }
+  
+  .buttons img
+  {
+    width: 100%;
+  }
+  .grid h1 {
+    font-family: "lolfont", sans-serif;
+    font-size: 35px;
+    text-align: center;
+    color: #000;
+    padding: 2px 0px;
+    border-radius: 50px;
+  }
+  .grid hr {
+      margin-top: 10px;
+      background-color: #FB9EAC;
+      height: 3px;
+      border: none;
+  }
+  #score {
+    font-family: "lolfont", sans-serif;
+    color: #ffc107;
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  .grid #question {
+    font-family: "lolfont", sans-serif;
+    font-size: 30px;
+    color: #000;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .sound-player {
+    margin-top: 15px;
+    display: grid;
+    grid-template-areas: 
+      ". header header .";
+    column-gap: 20px;
+  }
+  .buttons {
+    margin-top: 10px;
+    display: grid;
+    grid-template-areas: 
+      "main main main main";
+    column-gap: 20px;
+  }
+  
+  #btn0,
+  #btn1,
+  #btn2,
+  #btn3 {
+    padding: 0px;
+    color: #fff;
+    border: none;
+  }
+  
+  #btn0:hover,
+  #btn1:hover,
+  #btn2:hover,
+  #btn3:hover {
+  cursor: pointer;
+  background-color: #ffc107;
+  }
+  
+  #btn0:focus,
+  #btn1:focus,
+  #btn2:focus,
+  #btn3:focus {
+  outline: 0;
+  }
+  
+  #progress {
+  color: #2b2b2b;
+  font-size: 18px;
+  }
+
+  /*quiz answers*/
+
+  .quiz-answers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .quiz-answers ul {
+    list-style-type: none;
+  }
+  .ans-header {
+    padding-bottom: 20px !important;
+  }
+  
